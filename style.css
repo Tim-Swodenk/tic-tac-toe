@@ -1,10 +1,28 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#current-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 #content {
@@ -18,12 +36,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #000;
-  font-size: 2rem;
+  background-color: #444;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 
 .cell:hover {
-  background-color: #e0e0e0;
+  background-color: #555;
+}
+
+.cell svg {
+  width: 100px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
 }
